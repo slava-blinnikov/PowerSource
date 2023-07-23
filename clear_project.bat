@@ -1,0 +1,1 @@
+del /s /q /f *.pro.user*;Makefile*;moc_*;*.o;*.obj;*.a;*.dll;*.exe;*.Debug;*.Release;*.so*;qrc_*;*.stash;ui_*.h;mainicon.res

@@ -1,0 +1,16 @@
+#!/bin/bash
+find . -depth -name "*.pro.user*" -delete
+find . -depth -name "Makefile*" -delete
+find . -depth -name "moc_*" -delete
+find . -depth -name "*.o" -delete
+find . -depth -name "*.obj" -delete
+find . -depth -name "*.a" -delete
+find . -depth -name "*.dll" -delete
+find . -depth -name "*.exe" -delete
+find . -depth -name "*.Debug" -delete
+find . -depth -name "*.Release" -delete
+find . -depth -name "*.so*" -delete
+find . -depth -name "qrc_*" -delete
+find . -depth -name "*.stash" -delete
+find . -depth -name "ui_*.h" -delete
+find . -depth -name "mainicon.res" -delete

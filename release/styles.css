@@ -1,0 +1,389 @@
+QPushButton#buttonCalibration
+{
+    border-style: none;
+	border-color: black;
+	border-width: 2px;
+	min-width: 54px;
+	max-width: 60px;
+	min-height: 54px;
+	image: url("./icons/calibration.png");
+}
+QPushButton#buttonCalibration:checked
+{
+    image: url("./icons/calibration_cancel.png");
+}
+
+QPushButton#buttonOptions
+{
+    border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	min-width: 54px;
+	max-width: 60px;
+	min-height: 54px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	image: url("./icons/options.png");
+}
+QPushButton#buttonOptions:pressed
+{
+    background-color: rgb(190, 190, 190);
+}
+
+QPushButton#buttonPlots
+{
+    border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	min-width: 54px;
+	max-width: 60px;
+	min-height: 54px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	image: url("./icons/oscilloscope.png");
+}
+QPushButton#buttonPlots:checked
+{
+    background-color: rgb(190, 190, 190);
+}
+
+QToolButton#buttonPresets
+{
+    border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-width: 74px;
+	max-width: 60px;
+	min-height: 54px;
+	image: url("./icons/presets.png");
+}
+QToolButton#buttonPresets::menu-button
+{
+    min-width: 15px;
+}
+
+QPushButton#buttonStart
+{
+    border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-width: 54px;
+	max-width: 60px;
+	min-height: 54px;
+	image: url("./icons/on.png");
+}
+QPushButton#buttonStart:checked
+{
+    border-style: none;
+	image: url("./icons/off.png");
+}
+
+QPushButton#buttonShowAccumulator
+{
+    border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-width: 54px;
+	max-width: 60px;
+	min-height: 54px;
+	image: url("./icons/accumulator.png");
+}
+QPushButton#buttonShowAccumulator:checked
+{
+    background-color: rgb(190, 190, 190);
+}
+
+QLabel#labelAlarmCaption
+{
+    font-family: 'Arial';
+	font-size: 50px;
+	color: red;
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	qproperty-alignment: 'AlignCenter';
+}
+
+QLabel#labelTaskUApply, QLabel#labelTaskIApply
+{
+    background-color: rgb(225, 255, 100);
+	min-width: 32px;
+	border-style: solid;
+	border-width: 2px;
+	border-right-style: none;
+	image: url("./icons/apply.png");
+}
+
+QLineEdit#fieldTaskU, QLineEdit#fieldTaskI
+{
+    font-family: 'Digital-7 Mono';
+	font-size: 60px;
+	min-height: 60px;
+	border-style: solid;
+	border-width: 2px;
+	border-right-style: none;
+	border-left-style: none;
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+}
+
+QLineEdit#fieldTaskU:read-only, QLineEdit#fieldTaskI:read-only
+{
+    background-color: rgb(225, 255, 100);
+}
+
+QLabel#labelU, QLabel#labelI
+{
+    background-color: rgb(225, 255, 100);
+	font-family: 'Digital-7 Mono';
+	font-size: 120px;
+	border-style: solid;
+	border-width: 2px;
+	border-right-style: none;
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+}
+
+QLabel#labelI
+{
+    border-left-style: none;
+}
+
+QLabel#labelTitleU, QLabel#labelTitleI
+{
+    background-color: rgb(225, 255, 100);
+	font-family: 'Times New Roman';
+	font-size: 120px;
+	border-style: solid;
+	border-width: 2px;
+	border-left-style: none;
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+}
+
+QLabel#labelTitleU, QLineEdit#fieldTaskU, QLabel#labelU
+{
+    color: red;
+}
+
+QLabel#labelTitleI, QLineEdit#fieldTaskI, QLabel#labelI
+{
+    color: blue;
+}
+
+QPushButton#buttonOnOffTrigger
+{
+    background-color: rgb(225, 255, 100);
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-right-style: none;
+	border-bottom-style: none;
+	min-width: 55px;
+	min-height: 42px;
+	padding-left: 5px;
+	image: url("./icons/trigger-off.png");
+}
+
+QPushButton#buttonOnOffTrigger:checked
+{
+    image: url("./icons/trigger-on.png");
+}
+
+QCheckBox#checkboxIStable
+{
+    background-color: rgb(225, 255, 100);
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-right-style: none;
+	border-top-style: none;
+	min-width: 42px;
+	min-height: 42px;
+}
+
+QCheckBox#checkboxIStable::indicator
+{
+    width: 32px;
+	height: 32px;
+	subcontrol-position: center;
+}
+
+QCheckBox#checkboxIStable::indicator:unchecked
+{
+    image: none;
+}
+
+QCheckBox#checkboxIStable::indicator:checked
+{
+    image: url("./icons/stable-on.png");
+}
+
+QLabel#labelTemperatureTransistorIndicator, QLabel#labelTemperatureDiodeIndicator
+{
+    background-color: rgb(130, 190, 90);
+    min-width: 50px;
+	min-height: 50px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	image: url("./icons/temperature.png");
+}
+
+QLabel#labelTemperatureTransistorTitle, QLabel#labelTemperatureDiodeTitle
+{
+    background-color: rgb(130, 190, 90);
+	min-width: 50px;
+	min-height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+QLabel#labelTemperatureTransistorTitle
+{
+    image: url("./icons/transistor.png");
+}
+
+QLabel#labelTemperatureDiodeTitle
+{
+    image: url("./icons/diode.png");
+}
+
+QLabel#labelTemperatureTransistorValue, QLabel#labelTemperatureDiodeValue
+{
+    background-color: rgb(130, 190, 90);
+	font-family: 'Digital-7 Mono';
+	font-size: 50px;
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+	padding-top: 10px;
+	padding-bottom: 10px;
+	max-height: 50px;
+}
+
+QLabel#labelTemperatureTransistorUnit, QLabel#labelTemperatureDiodeUnit
+{
+    background-color: rgb(130, 190, 90);
+	font-family: 'Courrier New';
+	font-size: 40px;
+	padding-right: 20px;
+	qproperty-alignment: 'AlignVCenter | AlignLeft';
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+QWidget#widgetAccumulatorPanel
+{
+    background-color: rgb(168, 168, 223);
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+QLabel#labelAccumulatorCapacity,
+QLabel#labelAccumulatorCapacityUnit,
+QLabel#labelAccumulatorTimer
+{
+    padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+QLabel#labelAccumulatorCapacity,
+QLabel#labelAccumulatorTimer
+{
+    font-family: 'Digital-7 Mono';
+	font-size: 70px;
+	qproperty-alignment: 'AlignVCenter | AlignRight';
+}
+QLabel#labelAccumulatorCapacityUnit
+{
+    font-family: 'Courrier New';
+	font-size: 50px;
+	qproperty-alignment: 'AlignVCenter | AlignLeft';
+}
+QLabel#labelAccumulatorCapacity,
+QLabel#labelAccumulatorCapacityUnit
+{
+color: rgb(49, 49, 107);
+}
+QLabel#labelAccumulatorTimer
+{
+color: rgb(55, 102, 49);
+}
+
+QPushButton#buttonAccumulatorReset
+{
+    background-color: rgb(168, 168, 223);
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-radius: 10px;
+	min-width: 54px;
+	max-width: 60px;
+	min-height: 54px;
+	max-height: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	image: url("./icons/reset-acc.png");
+}
+QPushButton#buttonAccumulatorReset:pressed
+{
+    background-color: rgb(190, 190, 190);
+}
+
+QWidget#onscreenKeyboard
+{
+    border-style: none;
+	border-color: black;
+	border-width: 2px;
+	background-color: darkgrey;
+}
+QWidget#onscreenKeyboard > QToolButton
+{
+    border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 10px;
+	max-width: 34px;
+	max-height: 34px;
+	min-width: 34px;
+	min-height: 34px;
+}
+QWidget#onscreenKeyboard > QToolButton:pressed
+{
+    border-color: red;
+}
+QToolButton#buttonKeyNumber1{image: url("./icons/key1.png");}
+QToolButton#buttonKeyNumber2{image: url("./icons/key2.png");}
+QToolButton#buttonKeyNumber3{image: url("./icons/key3.png");}
+QToolButton#buttonKeyNumber4{image: url("./icons/key4.png");}
+QToolButton#buttonKeyNumber5{image: url("./icons/key5.png");}
+QToolButton#buttonKeyNumber6{image: url("./icons/key6.png");}
+QToolButton#buttonKeyNumber7{image: url("./icons/key7.png");}
+QToolButton#buttonKeyNumber8{image: url("./icons/key8.png");}
+QToolButton#buttonKeyNumber9{image: url("./icons/key9.png");}
+QToolButton#buttonKeyNumber0{image: url("./icons/key0.png");}
+QToolButton#buttonEditDot{image: url("./icons/keyDot.png");}
+QToolButton#buttonEditDel{image: url("./icons/backspace.png");}
+QToolButton#buttonEditCancel{image: url("./icons/keyCancel.png");}
+QToolButton#buttonEditOk{image: url("./icons/keyOk.png");}
